@@ -104,7 +104,7 @@ const excluirInstrutor = (req, res) => {
     });
 
     if (!instrutor) {
-        return res.status(404).json({ mensagem: "O instrutor não existe"})
+        return res.status(404).json({ mensagem: "O instrutor não existe" })
     }
 
     instrutores = instrutores.filter((instrutor) => {
@@ -112,8 +112,10 @@ const excluirInstrutor = (req, res) => {
     });
 
     return res.status(204).send()
+};
 
-} 
+
+
 
 module.exports = {
     listarInstrutores,
